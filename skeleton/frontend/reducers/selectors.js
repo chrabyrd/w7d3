@@ -1,5 +1,5 @@
 import {values} from 'lodash';
 
-export const selectAllPokemon = (state) => {
-  return values(state);
+export const selectAllPokemon = ({pokemon}) => {
+  return values(pokemon);
 };
