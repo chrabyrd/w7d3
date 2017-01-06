@@ -9,7 +9,6 @@ import {selectAllPokemon} from './reducers/selectors';
 document.addEventListener("DOMContentLoaded", () => {
   const rootEl = document.getElementById('root');
   const store = configureStore();
-  ReactDOM.render(<Root store={store}/>, rootEl);
   window.store = store;
   window.fetchAllPokemon = fetchAllPokemon;
   window.fetchAPokemon = fetchAPokemon;
@@ -18,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
   window.receiveAPokemon = receiveAPokemon;
   window.requestAPokemon = requestAPokemon;
   window.selectAllPokemon = selectAllPokemon;
+  ReactDOM.render(<Root store={store}/>, rootEl);
 });

@@ -30,6 +30,7 @@ class PokemonDetail extends React.Component {
         <li>{this.props.pokemonDetail.defense}</li>
         {moves}
       </ul>
+      {this.props.children}
     </section>;
   }
 }
